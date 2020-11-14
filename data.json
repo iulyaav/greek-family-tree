@@ -1,0 +1,58 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Zeus",
+            "mother": "Rhea",
+            "father": "Kronos",
+            "order": "third",
+            "element": ["sky", "lighting", "thunder", "law", "order", "justice"],
+            "sex": "male"
+        },
+        {
+            "id": 2,
+            "name": "Hera",
+            "mother": "Rhea",
+            "father": "Kronos",
+            "order": "third",
+            "element": ["marriage", "women", "childbirth", "family"],
+            "sex": "female"
+        },
+        {
+            "id": 3,
+            "name": "Hestia",
+            "mother": "Rhea",
+            "father": "Kronos",
+            "order": "third",
+            "element": ["hearth", "home", "domesticity", "virginity", "family", "state"],
+            "sex": "female"
+        },
+        {
+            "id": 4,
+            "name": "Hades",
+            "mother": "Rhea",
+            "father": "Kronos",
+            "order": "third",
+            "element": ["underworld", "dead", "riches"],
+            "sex": "male"
+        },
+        {
+            "id": 5,
+            "name": "Demeter",
+            "mother": "Rhea",
+            "father": "Kronos",
+            "order": "third",
+            "element": ["harvest", "agriculture", "fertility", "sacred law"],
+            "sex": "female"
+        },
+        {
+            "id": 6,
+            "name": "Poseidon",
+            "mother": "Rhea",
+            "father": "Kronos",
+            "order": "third",
+            "element": ["sea", "storms", "earthquakes", "horses"],
+            "sex": "male"
+        }
+    ]
+}
