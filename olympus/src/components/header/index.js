@@ -5,7 +5,9 @@ import style from './style.css';
 const Header = () => (
 	<header class={style.header}>
 		<nav>
-			<Link activeClassName={style.active} href="/">Home</Link>
+			<span style="font-size: 3em; color: Tomato; margin-right:0.5em;">
+				<i class="fas fa-caret-down"></i>
+			</span>
 		</nav>
 	</header>
 );

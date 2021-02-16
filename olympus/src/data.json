@@ -7,7 +7,8 @@
             "father": "Kronos",
             "order": "third",
             "element": ["sky", "lighting", "thunder", "law", "order", "justice"],
-            "sex": "male"
+            "sex": "male",
+            "icon": "/assets/img/zeus.png"
         },
         {
             "id": 2,
@@ -16,7 +17,8 @@
             "father": "Kronos",
             "order": "third",
             "element": ["marriage", "women", "childbirth", "family"],
-            "sex": "female"
+            "sex": "female",
+            "icon": "/assets/img/hera.png"
         },
         {
             "id": 3,
@@ -25,7 +27,8 @@
             "father": "Kronos",
             "order": "third",
             "element": ["hearth", "home", "domesticity", "virginity", "family", "state"],
-            "sex": "female"
+            "sex": "female",
+            "icon": "/assets/img/hestia.png"
         },
         {
             "id": 4,
@@ -34,7 +37,8 @@
             "father": "Kronos",
             "order": "third",
             "element": ["underworld", "dead", "riches"],
-            "sex": "male"
+            "sex": "male",
+            "icon": "/assets/img/hades.png"
         },
         {
             "id": 5,
@@ -43,7 +47,8 @@
             "father": "Kronos",
             "order": "third",
             "element": ["harvest", "agriculture", "fertility", "sacred law"],
-            "sex": "female"
+            "sex": "female",
+            "icon": "/assets/img/demeter.png"
         },
         {
             "id": 6,
@@ -52,7 +57,8 @@
             "father": "Kronos",
             "order": "third",
             "element": ["sea", "storms", "earthquakes", "horses"],
-            "sex": "male"
+            "sex": "male",
+            "icon": "/assets/img/poseidon.png"
         }
     ]
 }

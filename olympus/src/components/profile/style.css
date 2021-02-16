@@ -1,0 +1,9 @@
+.profilebox {
+    background-color: grey;
+    margin: 5px;
+    min-width: 200px;
+}
+
+.icon {
+    width: 40%;
+}

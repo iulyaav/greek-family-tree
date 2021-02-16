@@ -1,15 +1,17 @@
 import { h } from 'preact';
 import style from './style.css';
 
-import Profile from '../../components/profile';
+import Panel from '../../components/panel';
 
 
 const Home = () => {
 	var json_file = require('../../data.json'); 
 	var data = json_file["data"];
+	var currentId = 1;
+	let profile = data.find(el => el["id"] === currentId);
 	return (
 		<div class={style.home}>
-			 {data.map(profile => <Profile {...profile} />)}
+			<Panel {...profile}/>			 
 		</div>
 	)
 
