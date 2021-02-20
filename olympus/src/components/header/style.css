@@ -1,12 +1,12 @@
 .header {
-	position: fixed;
+	position: inherit;
 	left: 0;
 	top: 0;
 	width: 100%;
-	height: 56px;
+	height: 8%;
 	padding: 0;
 	background: #eae2b7;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 	z-index: 50;
 }
 

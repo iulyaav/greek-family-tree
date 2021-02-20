@@ -1,9 +1,10 @@
 .profilebox {
-    background-color: grey;
+    background-color: #f1efe5;
     margin: 5px;
-    min-width: 200px;
+    margin: 20px;
+    flex-grow: 2;
 }
 
 .icon {
-    width: 40%;
+    width: 20px;
 }

@@ -1,0 +1,17 @@
+.panel {
+    min-height: 85%;
+    position: absolute;
+    min-width: 60%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.arrows {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    max-width: 20px;
+    margin: 15px;
+}
