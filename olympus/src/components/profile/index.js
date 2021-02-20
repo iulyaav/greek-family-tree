@@ -5,7 +5,11 @@ const Profile = ({ children, ...props })  => (
         <div>
             <img class={style.icon} src={props.icon}/>
         </div>
-        <h1>{props.name}</h1>
+        <div class={style.data}>
+            <h1>{props.name}</h1>
+            <span>Elements: {props.element.join(", ")}</span>
+        </div>
+        
     </div>
     
 );

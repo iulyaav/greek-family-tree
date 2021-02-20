@@ -5,13 +5,10 @@ import Panel from '../../components/panel';
 
 
 const Home = () => {
-	var json_file = require('../../data.json'); 
-	var data = json_file["data"];
-	var currentId = 1;
-	let profile = data.find(el => el["id"] === currentId);
+	var data = require('../../data.json'); 
 	return (
 		<div class={style.home}>
-			<Panel {...profile}/>			 
+			<Panel {...data}/>			 
 		</div>
 	)
 
