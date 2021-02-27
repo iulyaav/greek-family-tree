@@ -1,28 +1,32 @@
 import Profile from '../profile';
 import style from './style.css';
-import { useState } from 'preact/hooks';
+import { useState, useEffect } from 'preact/hooks';
+
+
+const useStateCallbackWrapper = (initilValue, callBack) => {
+    const [state, setState] = useState(initilValue);
+    useEffect(() => callBack(state), [state]);
+    return [state, setState];
+  };
 
 const Panel = ({ children, ...props }) => {
 
     const total = props.data.length;
 
-    const [currentId, setCurrentId] = useState(1);
+    const [currentId, setCurrentId] = useStateCallbackWrapper(1, s => setProfile(props.data.find(el => el["id"] === s)));
     const [profile, setProfile] = useState(props.data.find(el => el["id"] === currentId));
 
     const increment = () => {
-        setCurrentId(Math.min(total, currentId + 1)); 
-        setProfile(props.data.find(el => el["id"] === currentId));
+        setCurrentId(prev => Math.min(total, prev + 1)); 
     };
     const decrement = () => {
         setCurrentId(Math.max(1, currentId - 1));
-        setProfile(props.data.find(el => el["id"] === currentId));
-    };
-
+    };  
     return (
 	<div class={style.panel}>
-        <div class={style.arrows} onClick={decrement}><i class="material-icons">arrow_back_ios_new</i></div>
+        <div class={style.arrows} onClick={decrement}><a><i class="material-icons">arrow_back_ios_new</i></a></div>
             <Profile {...profile} />
-        <div class={style.arrows} onClick={increment}><i class="material-icons">arrow_forward_ios</i></div>
+        <div class={style.arrows} onClick={increment}><a><i class="material-icons">arrow_forward_ios</i></a></div>
     </div>
 )};
 
